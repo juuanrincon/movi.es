@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movi.es</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+			body {
+				width: 100%;
+				height: 100vh;
+				overflow: hidden;
+			}
+			.header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				height: 6vh;
+				box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.32);
+			}
+			.logo {
+				margin: 7px 15px;
+			}
+			.search {
+			}
+			.search input {
+				width: 400px;
+				padding: 5px;
+				border-radius: 5px;
+				border: 1px solid #dbdbe2;
+			}
+			.login {
+				display: flex;
+				align-items: center;
+				margin: auto 15px;
+			}
+			.login span {
+				margin-right: 15px;
+				font-weight: bold;
+			}
+			.user {
+				width: 30px;
+				height: 30px;
+				margin-right: 15px;
+				border-radius: 50%;
+				background-color: palegreen;
+			}
+			.content {
+				display: grid;
+				grid-template-columns: auto 1fr;
+			}
+			.menu {
+				display: grid;
+				grid-template-rows: repeat(4, 50px);
+				row-gap: 30px;
+				height: 94vh;
+				padding: 30px 10px;
+				font-size: 14px;
+				text-align: center;
+				color: white;
+				font-weight: bold;
+				font-weight: 600;
+				background: linear-gradient(to right, #ff565d, #fd6f6b);
+			}
+			.menu p:last-child {
+				grid-row: 19/20;
+			}
+			.icon {
+				font-size: 30px;
+			}
+			.movies {
+				padding: 20px 30px;
+			}
+			.movies h2 {
+				font-size: 1rem;
+				margin: 15px 0;
+			}
+			.trends {
+				margin-bottom: 35px;
+			}
+			.items {
+				display: grid;
+				grid-auto-rows: auto;
+				grid-template-columns: repeat(4, 400px);
+				column-gap: 40px;
+			}
+			.item {
+				width: 100%;
+				height: 210px;
+				bottom: 0;
+				position: relative;
+			}
+			.item img {
+				height: 210px;
+				width: 100%;
+				object-fit: cover;
+			}
+			.description {
+				padding: 5px 10px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				color: white;
+				font-size: 12px;
+				background-color: rgba(255, 86, 93, 0.85);
+			}
+			.description h3 {
+				font-size: 1rem;
+				margin: 5px 0;
+			}
+		</style>
+		<script
+			src="https://kit.fontawesome.com/5d4f49b5ee.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<figure class="logo">
+				<img src="./assets/logo.jpg" alt="logo" width="100px" />
+			</figure>
+			<form action="" class="search">
+				<input
+					type="search"
+					name="busqueda"
+					id="busqueda"
+					placeholder="Busca tu peli, actor, actriz o director favorito"
+				/>
+			</form>
+			<div class="login">
+				<span>Juan Rincón</span>
+				<figure class="user">
+					<img src="./assets/people.svg" alt="user" width="30px" />
+				</figure>
+				<i class="fas fa-caret-down"></i>
+			</div>
+		</header>
+		<div class="content">
+			<aside class="menu">
+				<p><i class="fas fa-home icon"></i><br /><span>Home</span></p>
+				<p><i class="fas fa-fire icon"></i><br /><span>Trending</span></p>
+				<p><i class="fas fa-heart icon"></i><br /><span>Más likes</span></p>
+				<p><i class="fas fa-cog icon"></i><br /><span>Ajustes</span></p>
+			</aside>
+			<main class="movies">
+				<section class="trends">
+					<h2>Ahora en el Cine</h2>
+					<div class="items">
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+						
+				</section>
+
+				<section class="trends">
+					<h2>Ahora en el Cine</h2>
+					<div class="items">
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+						
+				</section>
+
+				<section class="trends">
+					<h2>Ahora en el Cine</h2>
+					<div class="items">
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<figure>
+								<img src="./assets/movie.webp" alt="" />
+							</figure>
+							<div class="description">
+								<h3>Unidos</h3>
+								<p>
+									Ambientada en un mundo suburbano de fantasía, UNIDOS nos
+									presenta a dos hermanos elfos adolescentes que se embarcan en
+									una extraordinaria aventura para descubrir si aún queda un
+									poco de magia allí afuera.
+								</p>
+							</div>
+						</div>
+						
+				</section>
+					
+			</main>
+		</div>
+	</body>
+</html>
